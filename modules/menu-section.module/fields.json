@@ -1,0 +1,9 @@
+[
+  {
+    "label": "Primary menu field",
+    "name": "primary_menu_field",
+    "type": "menu",
+    "locked": true,
+    "required": true
+  }
+]

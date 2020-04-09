@@ -1,0 +1,49 @@
+/************
+ Tech Banner
+*************/
+
+.tech-banner {
+  background-color: #ffffff;
+  box-shadow: 2.427px 1.763px 21px 0px rgba(0, 0, 0, 0.1);
+  padding: 45px 35px 35px;
+  text-align: center;
+}
+
+.tech-banner_images {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  flex-wrap: wrap;
+}
+
+.tech-banner_image {
+  -webkit-box-flex: 1;
+          flex: 1 0 25%;
+  margin-bottom: 25px;
+}
+
+.tech-banner_image img {
+  max-height: 60px;
+  height: 100%;
+  width: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .tech-banner {
+    padding: 48px 90px 35px;
+  }
+
+  .tech-banner_images {
+    margin-top: 45px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tech-banner_images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+}

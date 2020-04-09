@@ -1,0 +1,36 @@
+{##
+## Tables
+##}
+
+table {
+  margin-bottom: 1rem;
+  border: 1px solid #d0d0d0;
+  background-color: #ffffff;
+  color: #252425;
+}
+
+th,
+td {
+  padding: 10px 10px;
+  vertical-align: top;
+  border: 1px solid #d0d0d0;
+  
+}
+
+thead th,
+thead td {
+  color: #252425;
+  background-color: #ffffff;
+  border: 2px solid #d0d0d0;
+  border-bottom-width: 2px;
+  text-align: left;
+}
+
+thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #d0d0d0;
+}
+
+tbody + tbody {
+  border-top: 2px solid #d0d0d0;
+}

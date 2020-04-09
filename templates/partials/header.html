@@ -1,0 +1,63 @@
+<!--
+  templateType: global_partial
+  label: Website header
+-->
+
+<header class="header">
+  <div class="header__container">
+    <div class="header__left-column">
+      {# Site Logo #}
+      <div class="header__site-logo">
+        {% module 'site_logo'
+          path='@hubspot/logo',
+          label='Site logo'
+        %}
+      </div>
+      {# End Site Logo #}
+    </div>
+
+    <div class="header__right-column">
+
+      {# Language Switcher #}
+      {% if content.translated_content|length %}
+        <div class="header__language-switcher header--element">
+          <div class="header__language-switcher--label">
+            {% module 'language-switcher'
+              path='@hubspot/language_switcher',
+              label='Language switcher',
+              display_mode='localized'
+            %}
+            <div class="header__language-switcher--label-current"> {{ locale_name(locale) }}</div>
+          </div>
+        </div>
+      {% endif %}
+      {# End Language Switcher #}
+
+      {# Navigation #}
+      <div class="header__navigation header--element">
+        {% module 'secondary-logo'
+          path='@hubspot/linked_image',
+          label='Secondary logo',
+          extra_classes="header__navigation__secondary-logo",
+          img={
+          'src': get_asset_url('../../images/logo-icon.png'),
+          'alt': 'Rally Brand Logo',
+          'width': '64'
+          }
+        %}
+        {% module "navigation-primary"
+          path='../../modules/menu-section',
+          extra_classes='header__navigation_primary-nav',
+          label='Navigation menu'
+        %}
+      </div>
+      {# End Navigation #}
+
+      {# Menu Toggles #}
+        <div class="header--toggle header__navigation--toggle"></div>
+        <div class="header__close--toggle"></div>
+      {# End Menu Toggles #}
+
+    </div>
+  </div>
+</header>

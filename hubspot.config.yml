@@ -1,0 +1,12 @@
+defaultPortal: wcs_brennan
+portals:
+  - name: wcs_brennan
+    portalId: 395201
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CJ_H9ICWLhIEAAUADBjBjxggm6XKBCju6QwyGQAxQ1V4htAiS6ivW5Li85KWvIA9ilNVx4Q6EgAABEEAAAAAAAAAAAAAAACAAUIZADFDVXiJIUzkoi7fQZ14f3drYueIxZrf0g
+        expiresAt: '2020-04-09T18:04:14.628Z'
+    personalAccessKey: >-
+      CiRhZDI0YzE2ZS03MzcwLTQxMWEtOWQ0NC1kYThmMjZkMTUyYTgQwY8YGJulygQiJGYzMjRiOGQ1LWQ5NDgtNGI2ZC05OTc2LTMzMGY2OWQyMGI4YSoZAAXmkYIwhDyj8nXD_TUk4fTk7sE5pFf6Cw

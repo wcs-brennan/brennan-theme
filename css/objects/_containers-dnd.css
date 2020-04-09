@@ -1,0 +1,30 @@
+{##
+## Containers / Grid / DnD Areas
+##}
+
+.content-wrapper {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .content-wrapper {
+    padding: 0;
+  }
+}
+
+.dnd-section {
+  padding: 80px 20px;
+}
+
+.dnd-section > .row-fluid {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dnd-section .widget-type-cell {
+  padding-left: 0;
+  padding-right: 0;
+}
